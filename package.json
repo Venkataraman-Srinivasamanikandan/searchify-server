@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Flydubai Searchify project",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "nyc --reporter=html --reporter=text mocha --timeout 20000 --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "mocha": "^10.3.0",
+    "mongoose": "^8.1.3",
+    "nyc": "^15.1.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
