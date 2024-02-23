@@ -9,7 +9,7 @@ module.exports = {
 			if (!mongoose.mongo.ObjectId.isValid(country_id)) {
 				return res.status(400).send('Invalid country id');
 			}
-			const attractions = await attraction.find({ country_id })
+			const attractions = await attraction.find({ country_id }).sort({ title: 1 })
 			if (attractions.length === 0) {
 				return res.status(404).send('Country not found');
 			}
